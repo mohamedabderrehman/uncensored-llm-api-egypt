@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohamedabderrehman.github.io/uncensored-llm-api-egypt/sitemap.xml
+
+# واجهة API لنموذج لغوي بلا رقابة للمطورين في مصر
+# واجهة متوافقة مع OpenAI بدون فلترة أيديولوجية، موجهة للمطورين في مصر. العنوان https://uncensored-llm.sbs/v1 مع البث واستدعاء الأدوات وأمثلة كود جاهزة.

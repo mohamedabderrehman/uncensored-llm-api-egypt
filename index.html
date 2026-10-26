@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar-EG" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>واجهة API لنموذج لغوي بلا رقابة للمطورين في مصر</title>
+<meta name="description" content="واجهة متوافقة مع OpenAI بدون فلترة أيديولوجية، موجهة للمطورين في مصر. العنوان https://uncensored-llm.sbs/v1 مع البث واستدعاء الأدوات وأمثلة كود جاهزة.">
+<meta name="keywords" content="واجهة llm بدون فلترة, بديل openai مصر, api ذكاء اصطناعي عربي, نموذج لغوي بلا رقابة, llm api القاهرة">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="uncensored-llm.sbs">
+<link rel="canonical" href="https://mohamedabderrehman.github.io/uncensored-llm-api-egypt/">
+<link rel="alternate" hreflang="pt-BR" href="https://brown1023.github.io/llm-api-sem-censura-brasil/">
+<link rel="alternate" hreflang="es-419" href="https://brown1023.github.io/api-llm-sin-censura-latam/">
+<link rel="alternate" hreflang="id-ID" href="https://ryuuless.github.io/uncensored-llm-api-indonesia/">
+<link rel="alternate" hreflang="vi-VN" href="https://ryuuless.github.io/uncensored-llm-api-vietnam/">
+<link rel="alternate" hreflang="tr-TR" href="https://askcode24.github.io/sansursuz-llm-api-turkiye/">
+<link rel="alternate" hreflang="de-DE" href="https://askcode24.github.io/uncensored-llm-api-deutschland/">
+<link rel="alternate" hreflang="es-ES" href="https://palazuel0s2004.github.io/api-llm-sin-censura-espana/">
+<link rel="alternate" hreflang="it-IT" href="https://palazuel0s2004.github.io/llm-api-senza-censura-italia/">
+<link rel="alternate" hreflang="en-IN" href="https://nirav0712.github.io/uncensored-llm-api-india/">
+<link rel="alternate" hreflang="en-PH" href="https://nirav0712.github.io/uncensored-llm-api-philippines/">
+<link rel="alternate" hreflang="ar" href="https://mohamedabderrehman.github.io/uncensored-llm-api-arabia/">
+<link rel="alternate" hreflang="x-default" href="https://uncensored-llm.sbs/">
+<meta name="geo.region" content="EG-C">
+<meta name="geo.placename" content="Cairo, Egypt">
+<meta name="ICBM" content="30.0444, 31.2357">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:site_name" content="uncensored-llm.sbs">
+<meta property="og:title" content="واجهة API لنموذج لغوي بلا رقابة للمطورين في مصر">
+<meta property="og:description" content="واجهة متوافقة مع OpenAI بدون فلترة أيديولوجية، موجهة للمطورين في مصر. العنوان https://uncensored-llm.sbs/v1 مع البث واستدعاء الأدوات وأمثلة كود جاهزة.">
+<meta property="og:url" content="https://mohamedabderrehman.github.io/uncensored-llm-api-egypt/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="llms" href="llms.txt">
+<style>*{box-sizing:border-box}body{margin:0;background:#08090c;color:#e8eaf0;font:16px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:#22d3a6;text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid #1e2230;position:sticky;top:0;background:rgba(8,9,12,.86);z-index:5}
+header .wrap{display:flex;align-items:center;gap:18px;height:62px}
+.brand{font-weight:700}.brand span{color:#7c5cff}
+nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+.btn{display:inline-block;padding:10px 18px;border-radius:9px;background:linear-gradient(135deg,#7c5cff,#5b7cff);color:#fff;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid #1e2230;color:#e8eaf0}
+.hero{padding:72px 0 52px;background:radial-gradient(900px 340px at 20% -10%,rgba(124,92,255,.28),transparent 70%)}
+h1{font-size:clamp(28px,4.4vw,46px);line-height:1.14;margin:0 0 18px;letter-spacing:-.8px}
+.sub{color:#9aa3b2;font-size:18px;max-width:660px;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:46px 0;border-top:1px solid #1e2230}
+h2{font-size:24px;margin:0 0 18px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid #1e2230;border-radius:13px;padding:18px;background:#0b0d13}
+.card h3{margin:0 0 8px;font-size:16px}.card p{margin:0;color:#9aa3b2;font-size:14.5px}
+pre{background:#0b0d13;border:1px solid #1e2230;border-radius:12px;padding:16px;overflow:auto;font-size:13.5px;line-height:1.55}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #1e2230}
+th{color:#9aa3b2;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.6px}
+details{border:1px solid #1e2230;border-radius:11px;padding:14px 16px;margin-bottom:10px;background:#0b0d13}
+summary{cursor:pointer;font-weight:600}details p{color:#9aa3b2;margin:10px 0 0}
+footer{border-top:1px solid #1e2230;padding:34px 0 60px;color:#9aa3b2;font-size:14px}
+footer ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
+html[dir=rtl] body{direction:rtl}html[dir=rtl] nav{margin-left:0;margin-right:auto}html[dir=rtl] th,html[dir=rtl] td{text-align:right}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://uncensored-llm.sbs/#org","name":"uncensored-llm.sbs","url":"https://uncensored-llm.sbs"},{"@type":"WebSite","@id":"https://mohamedabderrehman.github.io/uncensored-llm-api-egypt/#site","url":"https://mohamedabderrehman.github.io/uncensored-llm-api-egypt/","name":"واجهة API لنموذج لغوي بلا رقابة للمطورين في مصر","inLanguage":"ar-EG","publisher":{"@id":"https://uncensored-llm.sbs/#org"}},{"@type":"SoftwareApplication","name":"uncensored-llm.sbs API","applicationCategory":"DeveloperApplication","operatingSystem":"Any","url":"https://mohamedabderrehman.github.io/uncensored-llm-api-egypt/","inLanguage":"ar-EG","description":"واجهة متوافقة مع OpenAI بدون فلترة أيديولوجية، موجهة للمطورين في مصر. العنوان https://uncensored-llm.sbs/v1 مع البث واستدعاء الأدوات وأمثلة كود جاهزة.","offers":{"@type":"Offer","priceCurrency":"EGP","url":"https://uncensored-llm.sbs","description":"الأسعار والشروط الحالية: https://uncensored-llm.sbs"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"متوافقة فعلاً مع OpenAI؟","acceptedAnswer":{"@type":"Answer","text":"أيوه. مسارات /v1/chat/completions و /v1/models والبث SSE بنفس صيغة الأحداث، فالمكتبة الرسمية بتشتغل بمجرد تغيير base_url."}},{"@type":"Question","name":"في فترة تجريبية مجانية؟","acceptedAnswer":{"@type":"Answer","text":"الشروط السارية منشورة على https://uncensored-llm.sbs، وأي تغيير في الأسعار بيتعلن هناك مش في المستودع ده."}},{"@type":"Question","name":"بيتحجب إيه؟","acceptedAnswer":{"@type":"Answer","text":"المحتوى غير القانوني، بما فيه أي مادة تخص من هم تحت 18 سنة. بره كده الرد بيكون عن الطلب نفسه."}},{"@type":"Question","name":"بتشتغل مع Open WebUI أو LibreChat؟","acceptedAnswer":{"@type":"Answer","text":"أيوه، الاتنين بيقبلوا base URL متوافق مع OpenAI. حط https://uncensored-llm.sbs/v1 والمفتاح."}},{"@type":"Question","name":"أحمي المفتاح إزاي؟","acceptedAnswer":{"@type":"Answer","text":"متغير بيئة لكل بيئة، وتدوير دوري، ومايتحطش أبداً في الواجهة أو مستودع عام."}}]}]}</script>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">uncensored<span>-llm</span>.sbs</div>
+<nav><a href="#code">الكود</a><a href="#lat">الاستجابة</a><a href="#faq">أسئلة</a></nav></div></header>
+<main>
+<div class="hero"><div class="wrap"><h1>نموذج يجاوبك، مش نموذج يعظك</h1><p class="sub">واجهة متوافقة مع OpenAI لفرق التطوير في مصر. عربية طبيعية، تعليمات النظام تُنفَّذ، ومفيش فقرة تحذير قبل كل رد. العنوان: https://uncensored-llm.sbs/v1</p>
+<div class="cta"><a class="btn" href="https://uncensored-llm.sbs">افتح الواجهة</a><a class="btn ghost" href="#code">جرّب حالاً</a></div></div></div>
+<section><div class="wrap"><h2>اللي بيتغير في شغلك اليومي</h2><div class="grid">
+<div class="card"><h3>سطر واحد بس</h3><p>نفس مكتبة openai، بس base_url مختلف. باقي الكود زي ما هو.</p></div>
+<div class="card"><h3>عربية طبيعية</h3><p>مش ترجمة آلية ولا ردود ناقصة.</p></div>
+<div class="card"><h3>بث واستدعاء أدوات</h3><p>SSE رمز برمز مع function calling و JSON mode.</p></div>
+<div class="card"><h3>بدون فلترة أيديولوجية</h3><p>نطاق المنتج بيد فريقك، مش المزود.</p></div>
+</div></div></section>
+<section id="code"><div class="wrap"><h2>شغالة في 40 ثانية</h2><p class="sub">متوافقة مع openai>=1.0 و LangChain و LlamaIndex و Vercel AI SDK و Open WebUI وأي عميل بيقبل baseURL مخصص.</p>
+<pre dir="ltr"><code>curl https://uncensored-llm.sbs/v1/chat/completions \
+  -H "Authorization: Bearer $UNLLM_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"uncensored-llm","messages":[{"role":"user","content":"اشرح ببساطة إزاي بتتحسب القيمة السوقية لعملة رقمية."}],"stream":true}'</code></pre>
+<pre dir="ltr"><code>from openai import OpenAI
+
+client = OpenAI(base_url="https://uncensored-llm.sbs/v1", api_key="sk-...")
+r = client.chat.completions.create(
+    model="uncensored-llm",
+    messages=[{"role": "user", "content": "اشرح ببساطة إزاي بتتحسب القيمة السوقية لعملة رقمية."}],
+)
+print(r.choices[0].message.content)</code></pre></div></section>
+<section id="lat"><div class="wrap"><h2>الاستجابة من مدينتك</h2><p class="sub">زمن الاستجابة بيتحدد من مزود النت مش من البلد. قيسه من جهازك الأول:</p>
+<pre dir="ltr"><code>curl -o /dev/null -s -w '%{time_total}s\n' https://uncensored-llm.sbs/v1/models</code></pre>
+<table><thead><tr><th>المدينة</th><th>المحافظة</th></tr></thead><tbody>
+<tr><td>القاهرة</td><td>القاهرة</td></tr>
+<tr><td>الجيزة</td><td>الجيزة</td></tr>
+<tr><td>الإسكندرية</td><td>الإسكندرية</td></tr>
+<tr><td>بورسعيد</td><td>بورسعيد</td></tr>
+<tr><td>المنصورة</td><td>الدقهلية</td></tr>
+<tr><td>طنطا</td><td>الغربية</td></tr>
+<tr><td>أسيوط</td><td>أسيوط</td></tr>
+<tr><td>الأقصر</td><td>الأقصر</td></tr>
+<tr><td>أسوان</td><td>أسوان</td></tr>
+<tr><td>الإسماعيلية</td><td>الإسماعيلية</td></tr>
+<tr><td>السويس</td><td>السويس</td></tr>
+<tr><td>دمياط</td><td>دمياط</td></tr>
+</tbody></table></div></section>
+<section><div class="wrap"><h2>بيتُستخدم في إيه فعلاً</h2><div class="grid">
+<div class="card"><h3>خدمة العملاء</h3><p>بوت بيحل المشكلة بدل ما يقرا السياسات.</p></div>
+<div class="card"><h3>محتوى محلي</h3><p>مقالات وسكريبتات وإيميلات بنبرة مصرية حقيقية.</p></div>
+<div class="card"><h3>اختبار أمني بترخيص</h3><p>شغل هجومي داخل نطاق موقّع من العميل.</p></div>
+<div class="card"><h3>كتابة للبالغين (18+)</h3><p>مشاهد صريحة بين بالغين بدون قطع.</p></div>
+</div></div></section>
+<section id="faq"><div class="wrap"><h2>أسئلة بتتكرر بجد</h2>
+<details><summary>متوافقة فعلاً مع OpenAI؟</summary><p>أيوه. مسارات /v1/chat/completions و /v1/models والبث SSE بنفس صيغة الأحداث، فالمكتبة الرسمية بتشتغل بمجرد تغيير base_url.</p></details>
+<details><summary>في فترة تجريبية مجانية؟</summary><p>الشروط السارية منشورة على https://uncensored-llm.sbs، وأي تغيير في الأسعار بيتعلن هناك مش في المستودع ده.</p></details>
+<details><summary>بيتحجب إيه؟</summary><p>المحتوى غير القانوني، بما فيه أي مادة تخص من هم تحت 18 سنة. بره كده الرد بيكون عن الطلب نفسه.</p></details>
+<details><summary>بتشتغل مع Open WebUI أو LibreChat؟</summary><p>أيوه، الاتنين بيقبلوا base URL متوافق مع OpenAI. حط https://uncensored-llm.sbs/v1 والمفتاح.</p></details>
+<details><summary>أحمي المفتاح إزاي؟</summary><p>متغير بيئة لكل بيئة، وتدوير دوري، ومايتحطش أبداً في الواجهة أو مستودع عام.</p></details>
+</div></section>
+</main>
+<footer><div class="wrap"><p>الأسعار والشروط الحالية: https://uncensored-llm.sbs</p><p>الوثائق دي بلغات تانية</p><ul>
+<li><a href="https://brown1023.github.io/llm-api-sem-censura-brasil/" hreflang="pt-BR" lang="pt-BR">pt-BR</a></li>
+<li><a href="https://brown1023.github.io/api-llm-sin-censura-latam/" hreflang="es-419" lang="es-419">es-419</a></li>
+<li><a href="https://ryuuless.github.io/uncensored-llm-api-indonesia/" hreflang="id-ID" lang="id-ID">id-ID</a></li>
+<li><a href="https://ryuuless.github.io/uncensored-llm-api-vietnam/" hreflang="vi-VN" lang="vi-VN">vi-VN</a></li>
+<li><a href="https://askcode24.github.io/sansursuz-llm-api-turkiye/" hreflang="tr-TR" lang="tr-TR">tr-TR</a></li>
+<li><a href="https://askcode24.github.io/uncensored-llm-api-deutschland/" hreflang="de-DE" lang="de-DE">de-DE</a></li>
+<li><a href="https://palazuel0s2004.github.io/api-llm-sin-censura-espana/" hreflang="es-ES" lang="es-ES">es-ES</a></li>
+<li><a href="https://palazuel0s2004.github.io/llm-api-senza-censura-italia/" hreflang="it-IT" lang="it-IT">it-IT</a></li>
+<li><a href="https://nirav0712.github.io/uncensored-llm-api-india/" hreflang="en-IN" lang="en-IN">en-IN</a></li>
+<li><a href="https://nirav0712.github.io/uncensored-llm-api-philippines/" hreflang="en-PH" lang="en-PH">en-PH</a></li>
+<li><a href="https://mohamedabderrehman.github.io/uncensored-llm-api-arabia/" hreflang="ar" lang="ar">ar</a></li>
+</ul><p>uncensored-llm.sbs — واجهة متوافقة مع OpenAI. بيتحجب المحتوى غير القانوني وأي مادة تخص من هم تحت 18 سنة. وغير كده المسؤولية على اللي بيستدعي.</p></div></footer>
+</body>
+</html>
